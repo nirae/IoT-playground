@@ -16,4 +16,4 @@ spec:
           service:
             name: iotplayground-service
             port:
-              nummber: 80
+              number: 80
