@@ -12,6 +12,7 @@ spec:
   - http:
       paths:
       - path: /app
+        pathType: Prefix
         backend:
           service:
             name: iotplayground-service
