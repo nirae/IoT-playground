@@ -11,11 +11,11 @@ spec:
       app: iotplayground
   template:
     metadata:
-      labels:
+    sudo sed '/    server \/a     --flannel-iface "eth1"' /etc/systemd/system/k3s.service  labels:
         app: iotplayground
     spec:
       containers:
       - name: iotplayground
-        image: wil42/playground:v1
+        image: wil42/playground:v2
         ports:
         - containerPort: 8888
