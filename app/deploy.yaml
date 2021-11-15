@@ -11,7 +11,7 @@ spec:
       app: iotplayground
   template:
     metadata:
-    sudo sed '/    server \/a     --flannel-iface "eth1"' /etc/systemd/system/k3s.service  labels:
+      labels:
         app: iotplayground
     spec:
       containers:
